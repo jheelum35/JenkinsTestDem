@@ -34,7 +34,7 @@ public class BaseTest {
 	public void setup() {
 		
 		Properties prop = IOUtils
-				.loadProperties("//Users//anirban//Documents//TestRepo//Test//Config.properties");
+				.loadProperties("//Users//anirban//Documents//JenkinsTestDem//Test//Config.properties");
 		BrowserFactory browserFactory = new BrowserFactory();
 		IBrowser browser = browserFactory.getBrowserType(prop.getProperty("Browser"));
 		driver = browser.getBrowser();

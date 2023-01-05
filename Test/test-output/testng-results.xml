@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-04T23:33:16 IST" name="Default suite" finished-at="2023-01-04T23:33:37 IST" duration-ms="20467">
+  <suite started-at="2023-01-05T14:35:49 IST" name="Default suite" finished-at="2023-01-05T14:36:25 IST" duration-ms="35569">
     <groups>
     </groups>
-    <test started-at="2023-01-04T23:33:16 IST" name="Default test" finished-at="2023-01-04T23:33:37 IST" duration-ms="20467">
-      <class name="RegressionTest.Test1">
-        <test-method is-config="true" signature="setup()[pri:0, instance:RegressionTest.Test1@26abb146]" started-at="2023-01-04T23:33:16 IST" name="setup" finished-at="2023-01-04T23:33:35 IST" duration-ms="18558" status="PASS">
+    <test started-at="2023-01-05T14:35:49 IST" name="Default test" finished-at="2023-01-05T14:36:25 IST" duration-ms="35569">
+      <class name="RegressionTest.Test3">
+        <test-method is-config="true" signature="setup()[pri:0, instance:RegressionTest.Test3@26abb146]" started-at="2023-01-05T14:35:49 IST" name="setup" finished-at="2023-01-05T14:36:20 IST" duration-ms="30632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:0, instance:RegressionTest.Test1@26abb146]" started-at="2023-01-04T23:33:35 IST" name="Login" finished-at="2023-01-04T23:33:37 IST" duration-ms="1777" status="PASS">
+        <test-method signature="testValidAuthentication()[pri:0, instance:RegressionTest.Test3@26abb146]" started-at="2023-01-05T14:36:20 IST" name="testValidAuthentication" finished-at="2023-01-05T14:36:24 IST" duration-ms="4793" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:RegressionTest.Test1@26abb146]" started-at="2023-01-04T23:33:37 IST" name="teardown" finished-at="2023-01-04T23:33:37 IST" duration-ms="112" status="PASS">
+        </test-method> <!-- testValidAuthentication -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:RegressionTest.Test3@26abb146]" started-at="2023-01-05T14:36:24 IST" name="teardown" finished-at="2023-01-05T14:36:25 IST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- RegressionTest.Test1 -->
+      </class> <!-- RegressionTest.Test3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

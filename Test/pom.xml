@@ -20,6 +20,7 @@
     <ENVURL>URL</ENVURL>
     <USERNAME>userName</USERNAME>
     <PASSWORD>Password</PASSWORD>
+    <test.run>testng.xml</test.run>
   </properties>
 
    <dependencies>
@@ -235,7 +236,7 @@
         <version>3.0.0-M5</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+            <suiteXmlFile>${project.basedir}/${test.run}</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>

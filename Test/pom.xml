@@ -16,10 +16,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <ENVNAME>ENV</ENVNAME>
-    <ENVURL>URL</ENVURL>
-    <USERNAME>userName</USERNAME>
-    <PASSWORD>Password</PASSWORD>
+ <jenkins.buildNumber>${env.BUILD_NUMBER}</jenkins.buildNumber>
     <test.run>p.xml</test.run>
   </properties>
 
@@ -224,7 +221,7 @@
   <build>
   <testResources>
   <testResource>
-  <directory>src/test/Resource</directory>
+  <directory>${project.basedir}</directory>
   <filtering>true</filtering>
   
   </testResource>

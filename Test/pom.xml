@@ -20,7 +20,7 @@
     <ENVURL>URL</ENVURL>
     <USERNAME>userName</USERNAME>
     <PASSWORD>Password</PASSWORD>
-    <test.run>testng.xml</test.run>
+    <test.run>p.xml</test.run>
   </properties>
 
    <dependencies>

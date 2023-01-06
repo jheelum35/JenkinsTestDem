@@ -11,12 +11,13 @@ public class Test3 extends BaseTest {
 	
 	
 	@Test
-	public void testValidAuthentication()
+	public void test1_ToValidAuthentication()
 	{
 		getDriver().get("https://admin:admin@the-internet.herokuapp.com/basic_auth");
 		String str=getDriver().findElement(By.xpath("//*[normalize-space(text()) = 'Congratulations! You must have the proper credentials.']")).getText();
 		
 	Assert.assertEquals(str, "Congratulations! You must have the proper credentials.");
 	}
+	
 
 }

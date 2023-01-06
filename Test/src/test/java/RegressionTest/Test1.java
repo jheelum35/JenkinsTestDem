@@ -30,7 +30,7 @@ public class Test1 extends BaseTest {
 		
 		
 		List<WebElement>element=getDriver().findElements(By.xpath("//div[@class='category-cards']//child::h5"));
-		
+	
 			for(WebElement ele:element)
 			{ 
 				String  srr= ele.getAttribute("outerText");

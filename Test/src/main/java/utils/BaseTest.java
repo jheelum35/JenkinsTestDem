@@ -32,7 +32,7 @@ public class BaseTest {
 	
 	@BeforeMethod
 	public void setup() {
-		
+	
 		Properties prop = IOUtils
 				.loadProperties("//Users//anirban//Documents//JenkinsTestDem//Test//Config.properties");
 		BrowserFactory browserFactory = new BrowserFactory();

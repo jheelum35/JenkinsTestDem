@@ -3,8 +3,8 @@
 <suite thread-count="3" parallel="classes" name="Suite">
   <test thread-count="3" parallel="classes" name="Test">
     <classes>
-      <class name="RegressionTest.Test3"/>
-      <class name="RegressionTest.Test1"/>
+      <class name="RegressionTest.Test2"/>
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

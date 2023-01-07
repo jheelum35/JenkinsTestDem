@@ -57,7 +57,8 @@ public class BaseTest {
 		BrowserFactory browserFactory = new BrowserFactory();
 		IBrowser browser = browserFactory.getBrowserType(prop2.getProperty("Browser"));
 		driver = browser.getBrowser();
-		System.out.println("Build Number is ------>"+prop2.getProperty("jenkins.build.number"));
+		System.out.println("user name  is ------>"+prop2.getProperty("uname"));
+		System.out.println("user name  is ------>"+prop2.getProperty("pword"));
 				System.out.println(prop2.getProperty("URL"));
 		driver.manage().window().maximize();
 		driver.get(prop2.getProperty("URL"));

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RegressionTest.Test3">
+      <class name="utils.BaseTest">
         <methods>
-          <include name="testValidAuthentication"/>
+          <include name="beforesuite"/>
           <include name="setup"/>
-          <include name="teardown"/>
+          <include name="Endsetup"/>
         </methods>
-      </class> <!-- RegressionTest.Test3 -->
+      </class> <!-- utils.BaseTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

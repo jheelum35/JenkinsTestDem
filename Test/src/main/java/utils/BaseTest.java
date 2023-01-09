@@ -1,6 +1,8 @@
 package utils;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
@@ -26,42 +28,42 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 
 	private WebDriver driver;
-	private Properties prop ;
-	private Properties prop2;
+	private   Properties properties;
 	
-
-	public Properties getProp() {
-		return prop;
+	public Properties getProperties() {
+		return properties;
 	}
-
-	public void setProp(Properties prop) {
-		this.prop = prop;
+	public void setProperties(Properties properties) {
+		this.properties = properties;
 	}
-	
-	public Properties getProp2() {
-		return prop2;
+	private  Properties getProperty()
+	{
+		 final Properties properties = new Properties();
+			final InputStream in = this.getClass().getClassLoader().getResourceAsStream("Config.properties");
+	        try {
+				properties.load(in);
+			}  catch (FileNotFoundException ex) {
+				ex.printStackTrace();
+	            //TestProperties.log.error(this.getClass().getName() + " property file not found in the classpath");
+	        }
+	        catch (IOException ex2) {
+	        	ex2.printStackTrace();
+	            //TestProperties.log.error(this.getClass().getName() + " Error reading file");
+	        }
+			return properties;
 	}
-
-	public void setProp2(Properties prop2) {
-		this.prop2 = prop2;
-	}
-
 	@BeforeMethod
 	public void setup() throws IOException {
-
-		prop2 = new Properties();
-		
-		prop2.load(BaseTest.class.getClassLoader().getResourceAsStream("Config.properties"));
-		//Properties prop = IOUtils
-			//	.loadProperties("//Users//anirban//Documents//JenkinsTestDem//Test//Config.properties");
+		Properties properties =getProperty();
 		BrowserFactory browserFactory = new BrowserFactory();
-		IBrowser browser = browserFactory.getBrowserType(prop2.getProperty("Browser"));
+		IBrowser browser = browserFactory.getBrowserType(properties.getProperty("Browser"));
 		driver = browser.getBrowser();
-		System.out.println("user name  is ------>"+prop2.getProperty("uname"));
-		System.out.println("user name  is ------>"+prop2.getProperty("pword"));
-				System.out.println(prop2.getProperty("URL"));
+		System.out.println(properties.getProperty("URL"));
 		driver.manage().window().maximize();
-		driver.get(prop2.getProperty("URL"));
+		driver.get(properties.getProperty("URL"));
+		
+		System.out.println("user name  is ------>"+properties.getProperty("uname"));
+		System.out.println("user name  is ------>"+properties.getProperty("pword"));
 
 	}
 @AfterClass

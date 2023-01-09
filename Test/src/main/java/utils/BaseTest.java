@@ -26,8 +26,10 @@ import BrowserFactory.IBrowser;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-
+	
 	private WebDriver driver;
+	private RemoteWebDriver remoteWebdriver;
+	
 	private   Properties properties;
 	
 	public Properties getProperties() {
@@ -54,17 +56,43 @@ public class BaseTest {
 	}
 	@BeforeMethod
 	public void setup() throws IOException {
+		
+		
+		
 		Properties properties =getProperty();
 		BrowserFactory browserFactory = new BrowserFactory();
 		IBrowser browser = browserFactory.getBrowserType(properties.getProperty("Browser"));
+		if(properties.getProperty("GRID_ENABLED")=="N")
+		{
+		
 		driver = browser.getBrowser();
+		System.out.println("-----Starting a Local Server------------");
+		}
+		else 
+		{	
+			
+		
+			driver=browser.getBrowser("grid_enabled","chrome","","");
+			System.out.println("-----Startinng a Remote Server------------");
+			
+		}
+		
 		System.out.println(properties.getProperty("URL"));
 		driver.manage().window().maximize();
 		driver.get(properties.getProperty("URL"));
 		
-		System.out.println("user name  is ------>"+properties.getProperty("uname"));
+		System.out.println("user name  is ------>"+properties.getProperty("GRID_ENABLED"));
 		System.out.println("user name  is ------>"+properties.getProperty("pword"));
+		
 
+	}
+	
+	
+	@Test
+	public void test1()
+	{
+		System.out.println("this is a sucess");
+		
 	}
 @AfterClass
 public void Endsetup()

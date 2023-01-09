@@ -1,0 +1,399 @@
+{
+	"data": [
+		{
+			"methodName": "testCurrentMerchantContext",
+			"testdata": [
+				{
+					"Scenario_SS": "C6395: Current Merchant Context",
+					"Scenario_MS": "C6367: Multi Store-Tasks Current Merchant Context",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock",
+					"GlobalContextVariables": "Merchant Name,Merchant ID,Store Name,Store ID,Database Name"
+				}
+			]
+		},
+		{
+			"methodName": "testTaskEmailReceipt",
+			"testdata": [
+				{
+					"Scenario_SS": "C18677: Single Store-Tasks: Current Merchant Task= Email Receipt",
+					"Scenario_MS": "C6368: Multi Store-Tasks: Current Merchant Task= Email Receipt",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock",
+					"StoreId_SS": "600445",
+					"StoreId_MS": "600446",
+					"MerchantID": "9600172",
+					"TaskName": "Email Receipt",
+					"StartDate_SS": "06/21/19",
+					"EndDate_SS": "06/27/19",
+					"StartDate": "07/02/19",
+					"EndDate": "07/03/19"
+				}
+			]
+		},
+		{
+			"methodName": "testTaskiMobile3",
+			"testdata": [
+				{
+					"Scenario_SS": "C18679: Single Store-Tasks: Current Merchant Task= iMobile3 Data Upload",
+					"Scenario_MS": "C6370: Multi Store-Tasks: Current Merchant Task= iMobile3 Data Upload",
+					"MerchantID_SS": "9600172",
+					"MerchantID_MS": "9600173",
+					"TaskName": "iMobile3 Data Upload",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock",
+					"StartDate": "07/02/19",
+					"EndDate": "07/03/19",
+					"StoreId_SS": "600445",
+					"StoreId_MS": "600446"
+				}
+			]
+		},
+		{
+			"methodName": "testEmailUserMessages",
+			"testdata": [
+				{
+					"Scenario_SS": "C18678: Edit Single Store-Tasks: Current Merchant Task= Email User Messages",
+					"Scenario_MS": "C6369: Edit Multi Store-Tasks: Current Merchant Task= Email User Messages",
+					"EmailAddress": "AutoTestCashierChangePin@gmail.com",
+					"StartDate": "06/11/19",
+					"EndDate": "06/18/19",
+					"MerchantID_SS": "600172",
+					"MerchantID_MS": "600173",
+					"TaskName": "Email User Messages",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testSubmitPOSData",
+			"testdata": [
+				{
+					"Scenario_SS": "C18681: Single Store-Tasks: Current Merchant Task= Submit POS Data",
+					"Scenario_MS": "C6372: Multi Store-Tasks: Current Merchant Task= Submit POS Data",
+					"StoreId_SS": "600445",
+					"StoreId_MS": "600446",
+					"MerchantID_MS": "600173",
+					"TrackingID": "<SubmissionTrackingId>2</SubmissionTrackingId>",
+					"Successful": "true",
+					"MerchantID_SS": "600172",
+					"StartDate_SS": "06/07/19",
+					"EndDate_SS": "06/08/19",
+					"StartDate_MS": "06/13/19",
+					"EndDate_MS": "06/14/19",
+					"TaskName": "Submit POS Data",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testZuoraProduct",
+			"testdata": [
+				{
+					"Scenario_SS": "C18683: Single Store Tasks System Task Amend Zuora Product and Rate Plan",
+					"Scenario_MS": "C18673: Multi Store Tasks System Task Amend Zuora Product and Rate Plan",
+					"TaskName": "Amend Zuora Product and Rate Plan",
+					"StartDate": "06/07/19",
+					"EndDate": "06/08/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testDiagnosticPurge",
+			"testdata": [
+				{
+					"Scenario_SS": "C18684: Single Store-Tasks: System Task = Device Diagnostic Purge ",
+					"Scenario_MS": "C6375: Multi Store-Tasks: System Task = Device Diagnostic Purge",
+					"TaskName": "Device Diagnostic Purge",
+					"StartDate": "06/14/19",
+					"EndDate": "06/15/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testTicketPurge",
+			"testdata": [
+				{
+					"Scenario_SS": "C18701: Single Store-Tasks: System Task= Ticket Purge",
+					"Scenario_MS": "C6391: Multi Store-Tasks: System Task= Ticket Purge ",
+					"TaskName": "Ticket Purge",
+					"StartDate": "06/11/19",
+					"EndDate": "06/12/19",
+					"EndDateDB": "06/14/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testEmailMarketing",
+			"testdata": [
+				{
+					"Scenario_SS": "C18685: Single Store-Tasks: System Task= Email Marketing Submission",
+					"Scenario_MS": "C6377: Multi Store-Tasks: System Task= Email Marketing Submission",
+					"TaskName": "Email Marketing Submission",
+					"StartDate": "06/12/19",
+					"EndDate": "06/13/19",
+					"EndDateDB": "06/14/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testHostLogImport",
+			"testdata": [
+				{
+					"Scenario_SS": "C18688: Edit Single Store-Tasks: System Task= Host Log Import",
+					"Scenario_MS": "C6378: Edit Multi Store-Tasks: System Task= Host Log Import",
+					"TaskName": "Host Log Import",
+					"StartDate": "06/13/19",
+					"EndDate": "06/14/19",
+					"EndDateDB": "06/15/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testMerchantProvisioning",
+			"testdata": [
+				{
+					"Scenario_SS": "C18691: Single Store-Tasks: System Task= Merchant Provisioning ",
+					"Scenario_MS": "C6381: Multi Store-Tasks: System Task= Merchant Provisioning  ",
+					"TaskName": "Merchant Provisioning",
+					"StartDate": "06/25/19",
+					"EndDate": "06/26/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testProductModeChange",
+			"testdata": [
+				{
+					"Scenario_SS": "C18693: Edit Single Store-Tasks: System Task= Product Mode Change",
+					"Scenario_MS": "C6383: Edit Multi Store-Tasks: System Task= Product Mode Change",
+					"TaskName": "Product Mode Change",
+					"StartDate": "06/05/19",
+					"EndDate": "06/06/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testStoreEOD",
+			"testdata": [
+				{
+					"Scenario_SS": "C18695: Edit Single Store-Tasks: System Task= Store EOD",
+					"Scenario_MS": "C6385: Edit Multi Store-Tasks: System Task= Store EOD",
+					"TaskName": "Store EOD",
+					"StartDate": "06/11/19",
+					"EndDate": "06/12/19",
+					"EndDateDB": "06/14/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testMerchantEOD",
+			"testdata": [
+				{
+					"Scenario_SS": "C18690: Edit Single Store-Tasks: System Task= Merchant EOD",
+					"Scenario_MS": "C6380: Edit Multi Store-Tasks: System Task= Merchant EOD",
+					"TaskName": "Merchant EOD",
+					"StartDate": "06/11/19",
+					"EndDate": "06/12/19",
+					"EndDateDB": "06/14/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testTaskPurging",
+			"testdata": [
+				{
+					"Scenario_SS": "C18698: Edit Single Store-Tasks: System Task= Task Purging",
+					"Scenario_MS": "C6388: Edit Multi Store-Tasks: System Task= Task Purging",
+					"TaskName": "Task Purging",
+					"StartDate": "06/14/19",
+					"EndDate": "06/15/19",
+					"EndDateDB": "06/16/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testTicketArchive",
+			"testdata": [
+				{
+					"Scenario_SS": "C18699: Edit Single Store-Tasks: System Task= Ticket Archive",
+					"Scenario_MS": "C6389: Edit Multi Store-Tasks: System Task= Ticket Archive",
+					"TaskName": "Ticket Archive",
+					"StartDate": "06/25/19",
+					"EndDate": "06/26/19",
+					"EndDateDB": "06/28/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testLoyaltyHost",
+			"testdata": [
+				{
+					"Scenario_SS": "C18689: Edit Single Store-Tasks: System Task= Loyalty Host Finalize",
+					"Scenario_MS": "C6379: Edit Multi Store-Tasks: System Task= Loyalty Host Finalize",
+					"TaskName": "Loyalty Host Finalize",
+					"StartDate": "06/01/19",
+					"EndDate": "06/02/19",
+					"EndDateDB": "06/04/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testSubmitBulkItemAPIUpdates",
+			"testdata": [
+				{
+					"Scenario_SS": "C18704:Edit Single Store-Tasks: System Task= Submit Bulk Item API Updates",
+					"Scenario_MS": "C18675: Edit Multi Store-Tasks: System Task= Submit Bulk Item API Updates",
+					"TaskName": "Submit Bulk Item API Updates",
+					"StartDate": "06/26/19",
+					"EndDate": "06/26/19",
+					"EndDateDB": "06/28/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testSubmitEmailMailProvider",
+			"testdata": [
+				{
+					"Scenario_SS": "C18705: Edit Single Store-Tasks: System Task= Submit Email Mail Provider",
+					"Scenario_MS": "C18676: Edit Multi Store-Tasks: System Task= Submit Email Mail Provider",
+					"TaskName": "Submit Email Mail Provider",
+					"StartDate": "06/25/19",
+					"EndDate": "06/25/19",
+					"EndDateDB": "06/26/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testTicketBlobPurge",
+			"testdata": [
+				{
+					"Scenario_SS": "C18700: Edit Single Store-Tasks: System Task= Ticket Blob Purge",
+					"Scenario_MS": "C6390: Edit Multi Store-Tasks: System Task= Ticket Blob Purge",
+					"TaskName": "Ticket Blob Purge",
+					"StartDate": "06/21/19",
+					"EndDate": "06/22/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testSubmitTimebasedTicketAggs",
+			"testdata": [
+				{
+					"Scenario_SS": "C18696: Edit Single Store-Tasks: System Task= Submit Timebased Ticket Aggs",
+					"Scenario_MS": "C6386: Edit Multi Store-Tasks: System Task= Submit Timebased Ticket Aggs",
+					"TaskName": "Submit Timebased Ticket Aggs ",
+					"StartDate": "06/16/19",
+					"EndDate": "06/17/19",
+					"EndDateDB": "06/19/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testEmailAggs",
+			"testdata": [
+				{
+					"Scenario_SS": "C18686: Edit Single Store-Tasks: System Task= Email Aggs",
+					"Scenario_MS": "C18672: Edit Multi Store-Tasks: System Task= Email Aggs",
+					"TaskName": "Email Aggs",
+					"StartDate": "06/16/19",
+					"EndDate": "06/17/19",
+					"EndDateDB": "06/19/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testTimebasedTicketAggs",
+			"testdata": [
+				{
+					"Scenario_SS": "C18702: Edit Single Store-Tasks: System Task= Timebased Ticket Aggs",
+					"Scenario_MS": "C6392: Edit Multi Store-Tasks: System Task= Timebased Ticket Aggs",
+					"TaskName": "Timebased Ticket Aggs",
+					"StartDate": "16/07/19",
+					"EndDate": "06/18/19",
+					"EndDateDB": "06/19/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testPollEmailEventsMailProvider",
+			"testdata": [
+				{
+					"Scenario_SS": "C18687: Single Store-Tasks: System Task= Poll Email Events Mail Provider",
+					"Scenario_MS": "C18674:Multi Store-Tasks: System Task= Poll Email Events Mail Provider",
+					"TaskName": "Poll Email Events Mail Provider",
+					"StartDate": "06/01/19",
+					"EndDate": "06/02/19",
+					"EndDateDB": "06/04/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testZuoraUsageUpload",
+			"testdata": [
+				{
+					"Scenario_SS": "C18687: Single Store-Tasks: System Task= Poll Email Events Mail Provider|C18703: Single Store Tasks System Task Zuora Usage Upload",
+					"Scenario_MS": "C18674:Multi Store-Tasks: System Task= Poll Email Events Mail Provider|C6393: Multi Store-Tasks: System Task= Zuora Usage Upload",
+					"TaskName": "Zuora Usage Upload",
+					"StartDate": "06/30/19",
+					"EndDate": "07/01/19",
+					"EndDateDB": "07/03/19",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock"
+				}
+			]
+		},
+		{
+			"methodName": "testTaskNavigation",
+			"testdata": [
+				{
+					"Scenario_SS": "C6422: Tasks Navigation",
+					"Scenario_MS": "C6394: Multi Store-Tasks Navigation",
+					"Merchant_SS": "Infogain_sil_ss_pos_clock",
+					"Merchant_MS": "Infogain_silv_ms_pos_clock",
+					"TaskCategory": "Timebased Ticket Aggs"
+				}
+			]
+		}
+	]
+}

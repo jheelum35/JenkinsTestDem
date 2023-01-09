@@ -14,24 +14,27 @@ import org.openqa.selenium.safari.SafariDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 class ChromeBrowser implements IBrowser {
-	
+	protected  static ThreadLocal<WebDriver>  webdriver = new ThreadLocal<>();
+	protected  static ThreadLocal<RemoteWebDriver>  remotewebdriver = new ThreadLocal<>();
 	private WebDriver driver;
 	DesiredCapabilities  dc= new DesiredCapabilities();
 	
 	public WebDriver getBrowser() {
-	
+	// usage of thread local
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions chromeoptions = new ChromeOptions();
 		//chromeoptions.addArguments("--headless");
-		
-		return  new ChromeDriver(chromeoptions);
+		 webdriver.set(new ChromeDriver(chromeoptions));
+		 return webdriver.get();
+		  
 	
 		
 
 
 }
-	@Override
-	public WebDriver getBrowser(String grid_enabled,String BrowserName,String  ip,String port) {
+	
+	
+	public  WebDriver  getBrowser(String grid_enabled,String BrowserName,String  ip,String port) {
 		
 		
 		
@@ -42,13 +45,14 @@ class ChromeBrowser implements IBrowser {
 			
 		dc.setCapability("platformName", Platform.MAC);
 			try {
-			new RemoteWebDriver(new URL ("http://localhost:4444"),dc);
-				driver.manage().window().maximize();
+			
+			remotewebdriver.set(new RemoteWebDriver(new URL ("http://192.168.0.105:4444"),dc));
+				//driver.manage().window().maximize();
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			return driver;
+			return remotewebdriver.get();
 		}
 	
 		

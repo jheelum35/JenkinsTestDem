@@ -27,10 +27,13 @@ public class Test4 extends BaseTest {
 
 
 	@Test
-	public void Login()
+	public void testFrame()
 	{
+		getDriver().get("https://demoqa.com/frames");
 		
-		
+		getDriver().switchTo().frame("frame1");
+		String text=getDriver().findElement(By.id("sampleHeading")).getText();
+		System.out.println(text);
 	}
 
 }

@@ -62,7 +62,7 @@ public class BaseTest {
 		Properties properties =getProperty();
 		BrowserFactory browserFactory = new BrowserFactory();
 		IBrowser browser = browserFactory.getBrowserType(properties.getProperty("Browser"));
-		if(properties.getProperty("GRID_ENABLED")=="N")
+		if(properties.getProperty("GRID_ENABLED").equals("N"))
 		{
 		
 		driver = browser.getBrowser();
@@ -70,25 +70,26 @@ public class BaseTest {
 		}
 		else 
 		{	
-			
+			System.out.println("user name  is ------>"+properties.getProperty("GRID_ENABLED"));
 		
-			driver=browser.getBrowser("grid_enabled","chrome","","");
+			driver=browser.getBrowser(properties.getProperty("GRID_ENABLED"), 
+					properties.getProperty("Browser"), "", "4444");
 			System.out.println("-----Startinng a Remote Server------------");
 			
 		}
 		
 		System.out.println(properties.getProperty("URL"));
 		driver.manage().window().maximize();
-		driver.get(properties.getProperty("URL"));
+		//driver.get(properties.getProperty("URL"));
 		
-		System.out.println("user name  is ------>"+properties.getProperty("GRID_ENABLED"));
+		
 		System.out.println("user name  is ------>"+properties.getProperty("pword"));
 		
 
 	}
 	
 	
-	@Test
+	//@Test
 	public void test1()
 	{
 		System.out.println("this is a sucess");
